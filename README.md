@@ -1,9 +1,9 @@
 What is a Kryptonium paper wallet?
 Kryptonium wallets look much like bitcoin wallets, they consist of public and private keys, however there are some key differences.
 
-Kryptonium wallets are deterministic by design and are derived from the Kryptonium mnemonic seed, which is also referred to as the "secret key" in the Kryptonium world. A Kryptonium wallet seed is nothing more than random bytes, usually represented as a string that starts with "K", here's an example: snoPBrXtMeMyMHUVTgbuqAfg1SUTb. One Kryptonium seed is designed to be able to generate multiple private / public key pairs, however practically all Kryptonium wallet implementations use one Kryptonium seed per Kryptonium address.
+Kryptonium wallets are deterministic by design and are derived from the Kryptonium mnemonic seed, which is also referred to as the "secret key" in the Kryptonium world. A Kryptonium wallet seed is nothing more than random bytes, usually represented as a string that starts with "K", here's an example: KYibNT5ECve6dtvNvLcGUYi9TLsVfUbG4ghQLbJs5MPMLfBJvsYCs1EKzH8Yy72DcoKVQipuaXfP5Jia8T9GvHi3UBWE4ZW. One Kryptonium seed is designed to be able to generate multiple private / public key pairs, however practically all Kryptonium wallet implementations use one Kryptonium seed per Kryptonium address.
 
-You'll already likely be familiar with the Kryptonium address, which is where other people send Kryptonium to you. A Kryptonium address starts with the letter "K" and looks like this: rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B. Since the Kryptonium address can be derived from the account seed, it is only crucial to backup the secret spend key, view key and the address.
+You'll already likely be familiar with the Kryptonium address, which is where other people send Kryptonium to you. A Kryptonium address starts with the letter "K" and looks like this: KYibNT5ECve6dtvNvLcGUYi9TLsVfUbG4ghQLbJs5MPMLfBJvsYCs1EKzH8Yy72DcoKVQipuaXfP5Jia8T9GvHi3UBWE4ZW. Since the Kryptonium address can be derived from the account seed, it is only crucial to backup the secret spend key, view key and the address.
 
 What is a paper wallet?
 Paper wallets are secure backups of your Kryptonium wallets. XRP on your Kryptonium wallet is truly secure only when you have full control of your Kryptonium secret key, and not a third party...
