@@ -4914,61 +4914,6 @@ function creatWalletPdf() {
     var step4 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAE3CAMAAACOxkSLAAABklBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAADUrzfv7+/UsDn+/frWsz/+/vzVsTv9+/Thx3L8+e////338Nrr2aHkzIHy58L07M/bu1XXtEP+/PbZuE7jy33XtETVsDnm0In8+vH69uft3q7q2J3XtUbWs0Ht3arq2J/u4LLVsT0PDw/lzobaulLgxW3dwGLdwF/Ytkj58+Lz6MXewmX27tLz6cjo1JT48d3bvVn7+Oz69eXw47rcvl3n0o/fw2n48t/27tXiyXcXFxfs26X69+nZt0teXl7kzYPp1pjiynrx5b/m0Yz068xubm7CwsIuLi7o6urv4rWOjo5lZWUgICD379e4uLh7e3tAQECmpqaBgYFWVlY2NjYmJib3+Pj6+/vj4+Pe3t6srKzU1dWzs7OdnZ2GhoZ2dnZKSkrMzMyYmJhFRUUJCQn09fXZ2dmhoaFQUFA7OzuUlJS9vb3Q0NDHx8fl3vHJAAAAFnRSTlMAIK10M/nsVRUHlotlx7tJ0d/YgT+haG8mTwAAEN1JREFUeNrs1ruOglAUheGpp5oKY8GL+BgWdKBRA4oXRFBR8a7vPTi6Egknysxo5HjW3+7uK3bWB0NfJXbq86PEzlHiWiLcmd1eNXOK+wvDHdursgJdJLSfloE9n0IkVX/RnHSsoa69b5BINVjZc8fYCkRabcNdW0NPe78gIWzg78eJSEssMt777yQCiZt5vrV2jbZApLo1nOSPDDT5g0Su9KHVcZuLvkCk153O7UBmkYxEPpFjZ5KIxEKRXRgsNfmCxN+qz0YNM6oJRGobsxEeypo8ZST+I1LJiFROIqNZXSt+kHhM5UPYMDe1qkAkKroIJB7bMgh3U/FojZKJdiyiCCQenXyj9VkS8o3W50qIR2tbPFqdX45WqSWKPFqfJSHfaIXEa9Prrx+txZAowmgtmERKZHN7tKohcXe0xpfRqoxE7tGqqyKRf7SqIpF3tPqeKhLIuztaVZG4P1odxSSuR+skNVpjRSXSozU6iSgugTlCCUpQghKUoAQlKEEJSlDiHCUQJRAlECUQJRAlECUQJRAlECUQJRAlECUQJRAlECW+2aGDFIgAAICit5AyzTRZWCgblDVSSjaUcP97KPWLK/DfER6cgBNwAk7ACTgBJ+AEnIATcAJOwAk4ASfgBJyAE3ACTsAJOAEn4AScgBN4x0Q01/k6FN/wlJXpuExJHwV3z5/4xVvXfMK7bNir9h9cPX3i4MbultIGwgAM38XOO5s/DAIh0VRJQDJNAiggf1WYmkHBEw+8/1volO5UKiXtKfueBfZknwnLl0zn24nJ37K9dffREr/TW+Ks9VCE7OpPsovteDze1iqLwmZXnEcDV6h0ljA2CxMAe7IdXV85vm8Yhu87V9PhuJcAYKctX63WV8Ka1RIgbHvR334E1528GQLcvauzU1eJs64HyGL1duxgdOq11AbiaPZTSlMJ937bBi5rm7I/CGu0DYD2quEKoaeE28gSkPl8Ksq7uq2EEC42QggtJZYeYH+duf82c6IEZNzVUsJdxiDj7+L/GnkSzJahn4Q1CiDs3f4/XJZA0PJ1k3AbCyAeb+ofDcTnqvW9zgMg3ViaSTxmEkiK4COvc7DoLtjPBPCqekn4Wwk2f2Sefx42XiSHLXytJLpA3AJCqTqU8J9NsOP+rhiAXi+EmqGRxHsBcbcK5F9+lcvPEka3APvitbErsiHMByMP2m+WNhJOBeyxXwVu1EfRgcQoBbKBGj0WwGQo/E5MmN9rI9Ex4eFRlErMdnt/VBcrCcHcEmK6CkmeHU0kZg8Qv7mlEk4OXA7VxTcbzBtjd3f0wVvqIWF1LpEvjjguofbeblnqxGiDvVY3wjPwbGghMcsgvhVlEv73Pphb9YR6WwDZk/pu6kE600HC2jRhZZVJWPUU5Eptd5kCvY+BqiXhRgcJfw2yIcokBh7g3atBMweCofjdtQepr4HENICKWyZhPADmu3o3sZLQnLt7g8YNyJEGEm8QzkWJhLMG2t29QbMZ+WKv1wJe3NOXyCB4KpHwzxNoj3/t3er2wV4/if2uK1A8nbzEWRPW/nEJYx6AfaE2+uqpQXM/I7Jp1k9eogFhyzguMZxIZF5Vp6UHpAfD9bxPEp28xDnEr+KohJMBfbXAuQPiqvjccgIV99QlfrBzb0tpQ1EAht9izT85cAYhSEAJlIyEBhDKSQ4DDqK94YL3f4VKbEqU4LQ3nZLy3zgOcOE3m70CbHRgsDspYawB7Va8KtkYlBr68fiZQnd05hJGERI3JyXGCvA1KfviGQsK/Yoct4HB/ZlLjFwoGycl7qeAvd5T6d7WubmRkKo2xc6ZS8wteNJPSshsY4K5mIl8KwKTtoR1q+Fuz1ziqoRSTZ2WkNU1wHRWaQKFcAhpaFiNc5ewqNXlEwkZrmPApAW4OQkvV6MUfQmpPNh4WXVVwusU/gsJMao1eHt/ItoS2jL1uYTE+wClui4neo7As+O+hHlyxwyOWsDtpCS8Rg3r3GfH7vMp6rWaAjHA6uhycoqOz1xi9QjleKiE/6JqtQDc8iNQGqsSVj9Gs3fmEnoTnFGohOl8e9skbKgt1XETcOuGhLRQGMzPXEI2kJ8fS2RiYDtpEXVpgVmuiJ4bnJqkoy5Mh+cusYRS71gifm0CzbZ8d0FxvPmZKwJayAS5ykPi7N+fSIOyVI8kRL/TvI1hwOFl+3MTsLeGfGhrYdfPXqJiwSIelPCrPuIV2AxzXwElU5F3GX2FQufsJWQB1ixMQm00Ad7Nx/suoPWHEqw9hcfh+Ut0QKmHSYixLQI4ycComU89iuCqSHUsKEfg847kAL6GSkijBKA4uhyaTwDzSQ0+OYBdBCSMF+A5RELP+RvF1+C3GNItgMCqaLswUCMgIT0LHONYIt0Fmgl7T9EL/KVtxwTKI//3J6AehU+Ivavp2vhIYtgF3N7qRQMG2yDFBoitb8Tr2yPkh5GQSG1dcIYfJFILQOuIJPsa4C4DD2h7t12/UWSBTDROkkjSAXv5XkJ/UYC3S65bAPrBRyTg52VIJQ/db9E4XSQyLkBrlwpIqLcW2OWkeOWKCsTukh8pnNWeoqUt1ahIpDZANn6Q0HN5MBMzf4F8bylgZwMjxNgAJNIiclMdSVQkZDYAu3qQmE2A/Dx4cF+BmJMOrIoXDUxnt79VoiMhvRjU+r6E0QXs+cczEpC/ClA8xCA23eNESUJdmnjZhdc0QBnL+xYmoBQOaaaHk4yWhNxcxzjknzsNZjyVCGvSjpaEpB2FQ/Z6JR+L14uENfieipSEzFsAzYxXvS3HGblMaDk1WhLSHgD2dUXdFz5t1dD0iK0JkWQXvDNVf1bEdkyvm3UNcOtt+e0iKiHDqguYrcYs9cmdxrf7fn7jOqISYuQcAHtaTYdbpNrLREExTTM/jraEyM3SBdCa3a0hH9OvFvkagPLQ1mVfhCX2F9YxvGrN/lDVVX3f689hZlLAS+ne+ysm0hKiXiWaGl6K5g6miUTCmbgFBS+lOB3HxS/aEiL6vLqxCKvgPPQMORR1CZFU8rn+kld41+PdcjxSJVj0JV7T46Nd77a/6U4mk+7iYZm7b8ePGP4Lid/oIuF3kfC7SPhdJPwuEn4XCb+LhN9Fwu8i4XeR8LtI+P1TEiP5y6nJ1Sqp+7/9QxLdbMP49T811tkvKRFZZn9218/FfbG7bDl4nPA5m83Ia/Vf933YVuStXfZ9P9i5s+VEgQAKoH/RdatbWjSDC0RwAQMFGJfEfUtFyyW+5GH+/xcmKG3ApWasIW/eJ4vcJN2nAhiBrkY/xlz5vi8bdvmbpqpEngaqKd0ZIdJO+QgaI9fIE5HfhrIjhPQM5SlDoqmsFeX/JQBXDOrhOVwHQkYYnTfFlf6yC6qQYxYeePuka05fyT45xPNIRCYFiwZdvTius+Mt3uATItLYX1CXqjArQZ9b9lExZ+3vTGuXqLVOx+7+c4AkJdhajFkGTR3CdWghxe8+9OMCGswH7aqhhBN2gWVuX2iHG8SPWZFDeg1Ad6xi0eKA4y6OEnDyZxKlg0TqXKIIlCKrgUlPFMlK5E30h6HEePQSZPerkUKhchiIbWL5O4R4p3Q6C7vL+qFbn3519xszhw0+Cq/7V63wdpIGoK22C6a2bLkJvhocJTCu3CQB7VVsZraDZCUyU5SqLJyduAcsO9twOiGHgsvFw9BtE9pWCrueGNTAcKhLgogZPkf356FM0dmq4RerY9AJO0o43fQNEqZ1/K3sswmrmahEjWKzIFEJsXaGF26ejVH8pQYvfF2sSxaVIL0OiplrEqzmYPp9bYy9juFswx4FvNy/S1DZdTCe7ze2+9Qx3pKUyC/htbPnEuyNlvJChcP7eq2uHTQy5FyCdSly1yQG3uGQIyJVTfTTh15/CvpW+WcJ7g59qk9bwdGrQfE4dBOUKL/p1GDkTCIYTPE41bUOOZPNmSjOyAWJbI1idE2iDj1+t2HZh9UOe70meJX9s4RBZoX9cSYjU9pRywlKMFscLi//TYjBy0CtNRWPDd/0N+FDy58uHMi7ojcqwuvdIEFePDjrlkv1zpAkKdHrwBmRSxL5PrTFcTC7Aopv4Cv1osTsy2hwRYJpmLbO1imQpbCnujp9U2+QIDkPlq+jkZeSlFC7HCv1kkRrw2FIkQXsStjfj3tJomykoJArEmkTmwGJpWfCZ2EvO38Gr98iIdlLAIUcI0lKzEuxp25kPL9WgrSqDY7mgnwn80bRtFm0q30euvbUgda7JlEuQcmcSchM9Fi1BG1+gwRRfxVh2YwkKaE2APBdZHbf0Zc7Ek2uCDlNyMUumiPpmoSkna1jNTe/9479MnB0U75BgqTdVI2QJCUy79CXKXQGF2ZXkl+lk52bPrKLEtScjhi5JkE6KLycPk1OPyK9vIZmld0gQQZVkqxEewmtLlNn/X0WbW6Mr/gcY3FIuC5hycY+XXso0C6fRZ13RuI7mjWK9uoUnV5cosud+lFi5GAkJEQSlZB9yifptonC7ji7xjz9ldYYpXf2Nwlvm94nVjyXGGroR3eP7GiJwiDaS2/AP/oxiWqKu4wc/0PkDz8qYTnwhoR9gCqZk3NHjqLR+6uEOHdclRAT0WU1/pDgZ7zX0mCVYhLDJvp5cRpbYpz5UQmAboMBebC2UlyCGDq6ajISZNYB/Er4veq8DypL8Z5kO0BMghiUyrNsADlogD6xn5UIp7YtolM5kWj1Yb4mJJHNFYDC+7wyGAxfuk3w6fC0V9noJxKLBqVje/4wr/dB/Rb5UQmxrmva0Gk3G5dgdgmNTDIShOU6FLwvP278JZDaPGTPervCiQR5mVLwwtjj0Kd56WclUuHnaNmXMUq7uAQZPOp6N5uERJDeWkOYQn2YPe+xWupEQnr4MBGkOAnkflBirTwNxDC2K+VXwP6u1BYkzMuHMom+yWwZSvUose9OeuRiWFVZq6fbZnW5CeopnwvpYi8zUbqt/Se6Rlm8w3+ou4pRn4nOg7uySSyqvVrdr3fcr/zcJe4Sd4m7xF3iLvGHHTogAQAAYBjUv/XhsBYaQRMmzkRMxERMxERMxERMxERMxERMxERMxERMxERMxERMxERMxERMxERMjB06FgAAAAAY5G+9axaF0EzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzMxEzUnr3sJAxEYRwfrnJREMUmLngRHsMFOygBIogiUIqAUi+I7+3UetpAp3RqGpn2zH/J8rfgfJlCUgKSEpCUgKQEJCUgKQFJCUhKQFICkhKQCBKD7vCtNRkrMcuUqHNmSUC9QaM//5w+KjGJSgSJVFw/3Xw0+s+3r5EXCSaRJCR9kiomzyoZt8jD/WKjzwwlopkSCd5yxClHSQqlC4aI+t7s6NtrJWKZEuTPgUjyPOsSqavLZkdbtZWIxCHBL1JkiazVZffp7kt4EZAIrXy6fEr/SGwRp9ELFWlNaoqYgUTo5RMMETi/dJBMRRskDInwRS6vWMemR8/vXJzz6ykRvkiVipTY55cOkllAkehK2OWqP+dXuEHyzxI8g6RuDhLNb5DESEK0QXJ8CUeknGIem/XIGiS75zfGElyDZGgPEgQS/IMEiwTH+f0dJFgkdkQKHoNkQQeJgUXi4PkFkeZG3xpoJPbOr9cgWbXRSPi+B8AgQSMB5T0HCbwHYJHgOL/WB4oaFom994BshjlI6AeKMRYJ/0ECHyiwSDgiB98DNDwSfoMEoYTne0CGIM8eJEXC3zc5k5a3xmLLLAAAAABJRU5ErkJggg==';
     doc.addImage(step4, 'PNG', 257, 55, 24.44, 26.33);
 
-        // doc.addPage();
-        // BOX 1 [x = 5, y = 10]
-    doc.setFillColor(255, 255, 255);
-    doc.setDrawColor(212, 175, 55);
-    doc.rect(5, 5, 90, 90, "F");
-    doc.setFillColor(212, 175, 55);
-    doc.rect(5, 75, 90, 15, "F");
-    doc.setTextColor(255, 255, 255);
-    doc.setFontSize(38);
-    doc.text('Private View', 88, 79, null, 180);
-    var qrViewText = widgets.view.attributes['title'].value,
-    qrViewSplit = Math.ceil(qrViewText.length); // modified to display
-    doc.setFontSize(8)
-    doc.setTextColor(0, 0, 0)
-    doc.text(qrViewText.slice(0, qrViewSplit), 74, 15, null, 180);
-    doc.text(qrViewText.slice(qrViewSplit), 74, 11, null, 180);
-
-    
-    // BOX 2 - [x = 104, y = 10]
-    doc.setFillColor(255, 255, 255);
-    doc.setDrawColor(212, 175, 55);
-    doc.rect(104, 5, 90, 90, "F");
-    doc.setFillColor(212, 175, 55);
-    doc.rect(104, 75, 90, 15, "F");
-    doc.setTextColor(255, 255, 255);
-    doc.setFontSize(38);
-    doc.text('Private Spend', 191.5, 79, null, 180);
-    var qrSpendText = widgets.spend.attributes['title'].value,
-        qrSpendSplit = Math.ceil(qrSpendText.length); // modified to display
-    doc.setFontSize(8)
-    doc.setTextColor(0, 0, 0)
-    doc.text(qrSpendText.slice(0, qrSpendSplit), 174, 15, null, 180);
-    doc.text(qrSpendText.slice(qrSpendSplit), 174, 11, null, 180);
-
-
-    // BOX 3 - [x = 203, y = 10]
-
-
-    // BOX 4 - [x = 0, y = 100]
-    doc.setFillColor(255, 255, 255);
-    doc.setDrawColor(212, 175, 55);
-    doc.rect(5, 115, 90, 90, "F");
-    doc.setFillColor(212, 175, 55);
-    doc.rect(5, 120, 90, 15, "F");
-    doc.setTextColor(255, 255, 255);
-    doc.setFontSize(38);
-    doc.text('Public Wallet', 12, 132, null, 0);
-    var qrPublicText = widgets.address.attributes['title'].value,
-        qrPublicSplit = Math.ceil(qrPublicText.length); // modified to display
-    doc.setFontSize(8)
-    doc.setTextColor(0, 0, 0)
-    doc.text(qrPublicText.slice(0, qrPublicSplit), 23, 194, null, 0);
-    doc.text(qrPublicText.slice(qrPublicSplit, qrPublicSplit * 2), 22, 198, null, 0);
-    doc.text(qrPublicText.slice(qrPublicSplit * 2), 23, 202, null, 0);
-
     // WARNING
     doc.setFillColor(255, 248, 220);
     doc.rect(12, 170, 273, 27, "F");
